@@ -70,8 +70,7 @@ function showIndiBox (show) {
 		kantoContainer.classList.remove('hideMe');
 		johtoContainer.classList.remove('hideMe');
 		indiPokeBox.classList.add('hideMe');
-		typeContainer.innerHTML = '';
-		emptyTheParagraphs();
+		typeContainer.innerHTML = '';		
 	}
 }
 
@@ -81,9 +80,11 @@ function showIndiBox (show) {
 async function fillPokemonDataIntoFields (pokemonURL) {
 	let finalUrl = `https://pokeapi.co/api/v2/pokemon/${pokemonURL.toLowerCase()}`;
 	console.log(finalUrl);
+	let ourPokeImage = document.querySelector('.pokeDataContainer img');
+	ourPokeImage.src = '';
 	let ourPokemonData = await loadPokemonData(finalUrl);
 	let pokemonHeading = document.querySelector('#pokeName');
-	let ourPokeImage = document.querySelector('.pokeDataContainer img');
+	
 
 	ourPokeImage.src = `https://pokeres.bastionbot.org/images/pokemon/${ourPokemonData.id}.png`;
 
