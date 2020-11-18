@@ -1,0 +1,106 @@
+body{
+	background: url('background.jpg') no-repeat fixed;
+	background-size: cover;
+	background-position: center;
+}
+
+h2{
+	text-align: center;
+	color: white;
+	font-size: 40px;
+	font-family: 'Verdana';
+	letter-spacing: 2px;
+}
+
+.kantoListContainer ul li, .johtoListContainer ul li{
+	text-transform: capitalize;
+	list-style-type: none;
+	text-align: center;
+	cursor: pointer; 
+}
+
+.flexContainer{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.kantoListContainer, .johtoListContainer{	
+	
+	padding: 30px 0;
+	box-sizing: border-box;
+	background-color: white;
+	/* width: 30%;	 */
+	min-width: 400px;
+	height: 80vh;
+	border: 5px solid #4587A5;
+	border-radius: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.kantoListContainer h3, .johtoListContainer h3{
+	text-align: center;
+	color: #4587A5;
+	font-size: 25px;
+	
+	margin-top: 0;
+}
+
+.realkantoListContainer, .realjohtoListContainer{
+	overflow-y: scroll;
+	height: 83%;
+}
+
+.pokemonImage{
+	width: 20px;
+	height: 20px;
+}
+
+
+.hideMe{
+	display: none;
+}
+
+.pokeDataContainer{
+	background-color: white;
+	width: 400px;
+	margin: auto;
+	min-height: 500px;
+	text-align: center;
+	border-radius: 20px;
+}
+
+.indiPokeImage{
+	width: 180px;
+	height: 180px;
+	margin-top: 20px;	
+}
+
+.pokeDataContainer h3{
+	font-size: 30px;
+	font-family: 'verdana';	
+}
+
+
+#pokeName{
+	text-transform: capitalize;
+}
+
+#typeContainer p{
+	text-transform: uppercase;
+	padding-bottom: 10px;
+	margin-bottom: 0;
+}
+
+
+#backButton{
+	position: absolute;
+	color: white;
+	font-size: 30px;
+	left: 20px;
+	top: 20px;
+	font-weight: bold;
+	cursor: pointer;
+}
