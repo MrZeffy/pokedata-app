@@ -17,7 +17,7 @@ function printPokeData ({pokemon_entries}, list) {
 		ourListItem.innerText = pokemon.pokemon_species.name;
 		let pokeImage = document.createElement('img');
 		let pokemonNumber = pokemon.entry_number;
-		pokeImage.src = `https://pokeres.bastionbot.org/images/pokemon/${pokemon.pokemon_species.url.slice(42, -1)}.png`;
+		pokeImage.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.pokemon_species.url.slice(42, -1)}.png`;
 		pokeImage.classList.add('pokemonImage');
 		pokeImage.setAttribute('loading', 'lazy');
 		ourListItem.appendChild(pokeImage);
